@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos Web | ICON Technology</title>
-    <link rel="icon" type="image/png" href="assets/icons/pc.png">
+    <link rel="icon" type="image/png" href="/logonav.png">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Portafolio de Daniel Torres Rey - Proyectos de desarrollo web, diseño responsive y aplicaciones modernas con HTML5, CSS3, JavaScript, PHP y MySQL">
+    <meta name="description"
+        content="Portafolio de Daniel Torres Rey - Proyectos de desarrollo web, diseño responsive y aplicaciones modernas con HTML5, CSS3, JavaScript, PHP y MySQL">
     <meta name="keywords" content="proyectos web, portafolio, desarrollo web, ICON Technology">
-    
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WLB15WQV2"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-3WLB15WQV2');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-3WLB15WQV2');
     </script>
 </head>
+
 <body>
     <!-- Botón de Modo Claro/Oscuro -->
     <button class="theme-toggle" aria-label="Cambiar entre modo claro y oscuro">
@@ -31,9 +34,12 @@
         <section class="hero parallax">
             <div class="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item"><img src="assets/img/carruseltarjeta1.png" alt="Desarrollo Web Profesional" loading="lazy"></div>
-                    <div class="carousel-item"><img src="assets/img/carruseltarjeta2.png" alt="Diseño Moderno y Responsive" loading="lazy"></div>
-                    <div class="carousel-item"><img src="assets/img/carruselimg3.jpg" alt="Tecnologías Avanzadas" loading="lazy"></div>
+                    <div class="carousel-item"><img src="assets/img/carruseltarjeta1.png"
+                            alt="Desarrollo Web Profesional" loading="lazy"></div>
+                    <div class="carousel-item"><img src="assets/img/carruseltarjeta2.png"
+                            alt="Diseño Moderno y Responsive" loading="lazy"></div>
+                    <div class="carousel-item"><img src="assets/img/carruselimg3.jpg" alt="Tecnologías Avanzadas"
+                            loading="lazy"></div>
                 </div>
             </div>
             <div class="hero-content">
@@ -48,25 +54,156 @@
     <main>
         <section id="proyectos" class="services-section">
             <h2 class="section-title">Portafolio de Proyectos</h2>
-            <p class="section-subtitle">Descubre mis trabajos más recientes en desarrollo web y diseño</p>
-            
+            <p class="section-subtitle">Descubre mis trabajos más recientes en desarrollo web y diseño.</p>
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="dart" data-filter="flutter">Dart/Flutter</button>
+                <button class="filter-btn" data-filter="tools">Herramientas</button>
+                <button class="filter-btn" data-filter="php" data-filter="mysql">PHP/MySQL</button>
+            </div>
+
+            <!-- Tu contenedor de proyectos existente -->
+            <div class="projects-container" id="projects-container">
+                <!-- Todos tus proyectos existentes -->
+            </div>
+
+            <!-- Botón Cargar Más (inicialmente oculto) -->
+            <div class="load-more-container">
+                <button id="load-more-btn" class="load-more-btn" style="display: none;">Cargar más proyectos</button>
+            </div>
             <div class="projects-container">
-                <!-- Proyecto 1 -->
+                
+                 <!-- Proyecto 2 App FishSnap -->
+                <!-- PROYECTO CON VIDEO AUTOPLAY EN MOCKUP -->
+                <article class="project-item">
+                    <div class="project-image" style="height: auto; min-height: auto;">
+                        <div class="device-mockup">
+                            <!-- Mockup de MÓVIL con video autoplay -->
+                            <div class="mockup mobile-mockup">
+                                <div class="mockup-frame">
+                                    <div class="mockup-notch"></div>
+                                    <div class="mockup-screen">
+                                        <!-- VIDEO AUTOPLAY - CORTO Y REPETITIVO -->
+                                        <video class="preview-video" src="assets/video/Appfishsnap1.mp4" muted
+                                            autoplay loop playsinline
+                                            style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+                                    </div>
+                                    <div class="mockup-home-button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">FishSnap - App de Pesca</h3>
+                        <p class="project-description">
+                            Aplicación móvil para registrar y compartir capturas de pesca mediante fotografías.
+                            Permite llevar un seguimiento detallado con estadísticas personalizadas, un calendario
+                            de actividad para organizar jornadas de pesca y un perfil de usuario donde visualizar
+                            la evolución del pescador.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Android/iOS</span>
+                            <span class="tech-tag">Development</span>
+                        </div>
+                    </div>
+                </article>
+                  <!-- Proyecto 3 App HuntSnap-->
+                <!-- PROYECTO CON VIDEO AUTOPLAY EN MOCKUP -->
+                <article class="project-item">
+                    <div class="project-image" style="height: auto; min-height: auto;">
+                        <div class="device-mockup">
+
+                            <div class="mockup mobile-mockup">
+                                <div class="mockup-frame">
+                                    <div class="mockup-notch"></div>
+                                    <div class="mockup-screen">
+
+                                        <video class="preview-video" src="assets/video/App_HuntSnap1.mp4" muted autoplay
+                                            loop playsinline
+                                            style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+                                    </div>
+                                    <div class="mockup-home-button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">HuntSnap - App de Caza</h3>
+                        <p class="project-description">
+                            Aplicación móvil para registrar y compartir capturas de caza mediante fotografías.
+                            Permite llevar un seguimiento detallado con estadísticas personalizadas, un calendario
+                            de actividad para organizar jornadas de caza y un perfil de usuario donde visualizar
+                            la evolución del cazador.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Android/iOS</span>
+                            <span class="tech-tag">Development</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Proyecto 4 App PescaGo -->
+                <!-- PROYECTO CON VIDEO AUTOPLAY EN MOCKUP -->
+                <article class="project-item">
+                    <div class="project-image" style="height: auto; min-height: auto;">
+                        <div class="device-mockup">
+                            <!-- Mockup de MÓVIL con video autoplay -->
+                            <div class="mockup mobile-mockup">
+                                <div class="mockup-frame">
+                                    <div class="mockup-notch"></div>
+                                    <div class="mockup-screen">
+                                        <!-- VIDEO AUTOPLAY - CORTO Y REPETITIVO -->
+                                        <video class="preview-video" src="assets/video/PescaGo.mp4" muted autoplay loop
+                                            playsinline
+                                            style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+                                    </div>
+                                    <div class="mockup-home-button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">PescaGo - App de Pesca</h3>
+                        <p class="project-description">
+                            Aplicación móvil para pescadores que muestra información sobre embalses,
+                            especies de peces, y permite reservar spots de pesca. Incluye mapas
+                            interactivos y condiciones meteorológicas.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Google Maps</span>
+                            <span class="tech-tag">Android/iOS</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Proyecto 1 Web Pinturas Julio Alberto Torres -->
                 <article class="project-item">
                     <div class="project-image">
-                        <img src="assets/img/diseñoweb.jpg" alt="Proyecto Web Corporativo" loading="lazy">
+                        <img src="assets/img/web_pinturas.png" alt="Proyecto Web Corporativo" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://icontechnology.es" class="project-link" target="_blank" rel="noopener noreferrer">Ver Demo</a>
-                                <a href="https://github.com/DanielTR5" class="project-link github" target="_blank" rel="noopener noreferrer">Código</a>
+                                <a href="https://www.pinturasjulioalbertotorres.es/" class="project-link"
+                                    target="_blank" rel="noopener noreferrer">Ver Pagina Web</a>
+                                <a href="https://github.com/DanielTR5/Web_Pinturas_JulioAlberto"
+                                    class="project-link github" target="_blank" rel="noopener noreferrer">Código</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Web Corporativa ICON Technology</h3>
+                        <h3 class="project-title">Web Pinturas Julio Alberto Torres</h3>
                         <p class="project-description">
-                            Sitio web moderno y responsive para empresa de tecnología, con diseño optimizado, 
-                            modo oscuro/claro y formularios interactivos.
+                            Página web corporativa y responsive para empresa de pinturas, orientada a captar clientes,
+                            mostrar servicios profesionales,
+                            galería de trabajos realizados y facilitar el contacto directo mediante formularios
+                            optimizados.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">HTML5</span>
@@ -76,58 +213,403 @@
                         </div>
                     </div>
                 </article>
+                <!-- Proyecto 5 Plantillas Boda-->
+                <!-- PROYECTO CON VIDEO AUTOPLAY EN MOCKUP -->
+                <article class="project-item">
+                    <div class="project-image" style="height: auto; min-height: auto;">
+                        <div class="device-mockup">
 
-                <!-- Proyecto 2 -->
+                            <div class="mockup mobile-mockup">
+                                <div class="mockup-frame">
+                                    <div class="mockup-notch"></div>
+                                    <div class="mockup-screen">
+
+                                        <video class="preview-video" src="assets/video/Bodamediterr.mp4" muted autoplay
+                                            loop playsinline
+                                            style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+                                    </div>
+                                    <div class="mockup-home-button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">Wedding RSVP – Confirmación Asistencia</h3>
+                        <p class="project-description">
+                            Desarrollo de una página web personalizada para la gestión de confirmación de asistencia a
+                            eventos, enfocada en bodas.
+                            Incluye formulario interactivo para invitados, diseño responsive para móviles y una sección
+                            informativa con todos los detalles del evento.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Formularios Web</span>
+                            <span class="tech-tag">Responsive Design</span>
+                            <span class="tech-tag">Mobile First</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Proyecto 6 -->
                 <article class="project-item">
                     <div class="project-image">
-                        <img src="assets/img/soporteinf.jpg" alt="Sistema de Gestión" loading="lazy">
+                        <img src="assets/img/juego_pokemon.png" alt="Juego Pokemon - (Dart)" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/DanielTR5" class="project-link" target="_blank" rel="noopener noreferrer">Ver Código</a>
-                                <a href="https://github.com/DanielTR5" class="project-link github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="https://github.com/DanielTR5/Juego_Pokemon_Dart_API" class="project-link"
+                                    target="_blank" rel="noopener noreferrer">GitHub</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Sistema de Gestión</h3>
+                        <h3 class="project-title">Pokémon Adventure Game - (Dart)</h3>
                         <p class="project-description">
-                            Aplicación web para gestión interna con panel de administración, 
-                            base de datos y interfaz intuitiva para usuarios.
+                            Juego de consola desarrollado en Dart donde el usuario se convierte en entrenador Pokémon,
+                            puede registrarse, iniciar sesión, formar su equipo y consultar estadísticas obtenidas desde
+                            la API-POKEMON.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Consola</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Poke API</span>
+                            <span class="tech-tag">Login</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Proyecto 7 -->
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/tienda_online.png" alt="Tienda Online" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://olivedrab-mole-856149.hostingersite.com/" class="project-link"
+                                    target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                                <a href="https://github.com/DanielTR5/Web_Tienda_Online_HTML_CSS_JSON"
+                                    class="project-link github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tienda Online Camisetas Futbol</h3>
+                        <p class="project-description">
+                            Tienda online desarrollada con HTML, CSS y JavaScript puro, con gestión de productos
+                            mediante JSON,
+                            carrito de compras funcional y página de inicio orientada a la navegación del usuario.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">JSON</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Proyecto 8 -->
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/cmd.png" alt="Herramienta de Diagnóstico y Mantenimiento" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/DanielTR5/Herramientas_Informaticas_IconTechnology"
+                                    class="project-link github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ICON Support Tool - Soporte Técnico Windows</h3>
+                        <p class="project-description">
+                            Herramienta en Batch para Windows que realiza diagnósticos, limpieza de temporales,
+                            test de red y verifica el sistema, con registro automático de acciones .LOG.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Batch Script</span>
+                            <span class="tech-tag">CMD</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Proyecto 9 -->
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/sangregloria.png" alt=" Juego Sangre y Gloria - (Dart)" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/DanielTR5/Juego_Sangre_Gloria_Dart"
+                                    class="project-link github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Juego Sangre y Gloria - (Dart)</h3>
+                        <p class="project-description">
+                            Juego terminado en terminal, lenguaje de programacion Dart, el juegador lucha por su
+                            libertad.
+                            Sistema de lucha, tienda, historia, estadisticas, inventario y guardado de partida.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Terminal</span>
+                            <span class="tech-tag">JSON</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Proyecto 10 -->
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/cap_herr1.png" alt="Herramientas Informaticas" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/DanielTR5/Herramientas_Informaticas_IconTechnology"
+                                    class="project-link github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="https://steelblue-ape-934772.hostingersite.com" class="project-link"
+                                    target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Herramienta Informáticas- ICON</h3>
+                        <p class="project-description">
+                            Aplicación web client-side que agrupa utilidades informáticas comunes, priorizando
+                            rendimiento,
+                            portabilidad y ejecución local en el navegador.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Web</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Proyecto 11 -->
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/Sockets.png" alt="Sockets" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/DanielTR5/Comunicacion_Cliente-Servidor_Sockets_Dart"
+                                    class="project-link github" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Comunicación Cliente/Servidor con Sockets - (Dart)</h3>
+                        <p class="project-description">
+                            Este proyecto implementa un sistema de comunicación en tiempo real mediante sockets TCP
+                            utilizando Dart,
+                            permitiendo la conexión directa entre un servidor y uno o varios clientes a través de la red
+                            local.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Terminal</span>
+                            <span class="tech-tag">Servidor/Cliente</span>
+                            <span class="tech-tag">Sockets</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Proyecto 12 -->
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/Sockets_chat_app.png" alt="SocketsChat" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/DanielTR5" class="project-link github" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Chat Boot Sockets - (Flutter)</h3>
+                        <p class="project-description">Este proyecto implementa un sistema de comunicación en tiempo
+                            real mediante sockets TCP
+                            utilizando Dart, permitiendo la conexión directa entre un servidor y uno o varios clientes a
+                            través de la red
+                            local.
+
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Sockets</span>
+                            <span class="tech-tag">Android Studio</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Proyecto 13 -->
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/Acceso_datos.png" alt="Acesso a Datos" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://darkgreen-partridge-245299.hostingersite.com/" class="project-link"
+                                    target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                                <a href="https://github.com/DanielTR5/Proyecto_Acceso_Datos_PHP_MySQL"
+                                    class="project-link github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Gestión para Equipos de Natación - (PHP)</h3>
+                        <p class="project-description">Sistema web completo para la gestión de un equipo de natación,
+                            implementando todas las fases requeridas en el proyecto: diseño de base de datos, backend
+                            PHP con PDO,
+                            transacciones y consultas complejas con JOIN de múltiples tablas.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">PHP</span>
                             <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">CRUD</span>
+                            <span class="tech-tag">LocalHost</span>
                         </div>
                     </div>
                 </article>
-
-                <!-- Proyecto 3 -->
+                <!-- Proyecto 14
                 <article class="project-item">
                     <div class="project-image">
-                        <img src="assets/img/redes.jpg" alt="Aplicación Móvil" loading="lazy">
+                        <img src="assets/img/Acceso_datos.png" alt="Acesso a Datos" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/DanielTR5" class="project-link" target="_blank" rel="noopener noreferrer">Ver Código</a>
-                                <a href="https://github.com/DanielTR5" class="project-link github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="https://darkgreen-partridge-245299.hostingersite.com/" class="project-link"
+                                    target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                                <a href="https://github.com/DanielTR5/Proyecto_Acceso_Datos_PHP_MySQL" class="project-link github" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">App Móvil Responsive</h3>
-                        <p class="project-description">
-                            Aplicación web progresiva (PWA) con funcionalidades offline, 
-                            notificaciones push y diseño adaptable a todos los dispositivos.
+                        <h3 class="project-title">Sistema de Gestión para Equipos de Natación - (PHP)</h3>
+                        <p class="project-description">Sistema web completo para la gestión de un equipo de natación,
+                             implementando todas las fases requeridas en el proyecto: diseño de base de datos, backend PHP con PDO,
+                              transacciones y consultas complejas con JOIN de múltiples tablas.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">PWA</span>
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">SASS</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">CRUD</span>
+                            <span class="tech-tag">LocalHost</span>
                         </div>
                     </div>
                 </article>
+
+
+
+                Proyecto 15 
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/Acceso_datos.png" alt="Acesso a Datos" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://darkgreen-partridge-245299.hostingersite.com/" class="project-link"
+                                    target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                                <a href="https://github.com/DanielTR5/Proyecto_Acceso_Datos_PHP_MySQL" class="project-link github" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Gestión para Equipos de Natación - (PHP)</h3>
+                        <p class="project-description">Sistema web completo para la gestión de un equipo de natación,
+                             implementando todas las fases requeridas en el proyecto: diseño de base de datos, backend PHP con PDO,
+                              transacciones y consultas complejas con JOIN de múltiples tablas.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">CRUD</span>
+                            <span class="tech-tag">LocalHost</span>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                Proyecto 16 
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/Acceso_datos.png" alt="Acesso a Datos" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://darkgreen-partridge-245299.hostingersite.com/" class="project-link"
+                                    target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                                <a href="https://github.com/DanielTR5/Proyecto_Acceso_Datos_PHP_MySQL" class="project-link github" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Gestión para Equipos de Natación - (PHP)</h3>
+                        <p class="project-description">Sistema web completo para la gestión de un equipo de natación,
+                             implementando todas las fases requeridas en el proyecto: diseño de base de datos, backend PHP con PDO,
+                              transacciones y consultas complejas con JOIN de múltiples tablas.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">CRUD</span>
+                            <span class="tech-tag">LocalHost</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                 Proyecto 17
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/Acceso_datos.png" alt="Acesso a Datos" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://darkgreen-partridge-245299.hostingersite.com/" class="project-link"
+                                    target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                                <a href="https://github.com/DanielTR5/Proyecto_Acceso_Datos_PHP_MySQL" class="project-link github" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Gestión para Equipos de Natación - (PHP)</h3>
+                        <p class="project-description">Sistema web completo para la gestión de un equipo de natación,
+                             implementando todas las fases requeridas en el proyecto: diseño de base de datos, backend PHP con PDO,
+                              transacciones y consultas complejas con JOIN de múltiples tablas.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">CRUD</span>
+                            <span class="tech-tag">LocalHost</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                Proyecto 18
+                <article class="project-item">
+                    <div class="project-image">
+                        <img src="assets/img/Acceso_datos.png" alt="Acesso a Datos" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://darkgreen-partridge-245299.hostingersite.com/" class="project-link"
+                                    target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                                <a href="https://github.com/DanielTR5/Proyecto_Acceso_Datos_PHP_MySQL" class="project-link github" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Gestión para Equipos de Natación - (PHP)</h3>
+                        <p class="project-description">Sistema web completo para la gestión de un equipo de natación,
+                             implementando todas las fases requeridas en el proyecto: diseño de base de datos, backend PHP con PDO,
+                              transacciones y consultas complejas con JOIN de múltiples tablas.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">CRUD</span>
+                            <span class="tech-tag">LocalHost</span>
+                        </div>
+                    </div>
+                </article> -->
             </div>
         </section>
     </main>
@@ -140,22 +622,27 @@
                 <div class="contact-details">
                     <p><strong>📍 Ubicación:</strong> Cazalegas, Toledo</p>
                     <p><strong>📞 Teléfono:</strong> 675371975</p>
-                    <p><strong>✉️ Email:</strong> <a href="mailto:reytorresdaniel@gmail.com" class="email-link">reytorresdaniel@gmail.com</a></p>
+                    <p><strong>✉️ Email:</strong> <a href="mailto:reytorresdaniel@gmail.com"
+                            class="email-link">reytorresdaniel@gmail.com</a></p>
                 </div>
             </div>
         </div>
         <p class="footer-text">© 2025 ICON Technology. Todos los derechos reservados.</p>
         <div class="social-icons">
-            <a href="https://www.facebook.com/share/1UcGkh7W3m/?mibextid=wwXIfr" class="social-link facebook-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/share/1UcGkh7W3m/?mibextid=wwXIfr" class="social-link facebook-link"
+                target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <img src="assets/icons/fa-facebook-f.svg" alt="Facebook" class="icon">
             </a>
-            <a href="https://github.com/DanielTR5" class="social-link github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/DanielTR5" class="social-link github" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub">
                 <img src="assets/icons/fa-github.svg" alt="GitHub" class="icon">
             </a>
-            <a href="https://www.instagram.com/danielo5498?igsh=aDVxY213YW11YWxi&utm_source=qr" class="social-link instagram-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/danielo5498?igsh=aDVxY213YW11YWxi&utm_source=qr"
+                class="social-link instagram-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <img src="assets/icons/fa-instagram.svg" alt="Instagram" class="icon">
             </a>
-            <a href="https://www.linkedin.com/in/daniel-torres-rey-3414441ba/" class="social-link linkedin-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/daniel-torres-rey-3414441ba/" class="social-link linkedin-link"
+                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <img src="assets/icons/fa-linkedin-in.svg" alt="LinkedIn" class="icon">
             </a>
         </div>
@@ -164,4 +651,5 @@
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
